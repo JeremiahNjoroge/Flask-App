@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  a {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: green;
+  }
+  .dashboard-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-buttons a {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-buttons a:hover {
+    background-color: darkgreen;
+  }
+  .flash-messages {
+    text-align: center;
+  }
+  
+  .flash-message {
+    background-color: #def2ff;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #7dc5eb;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .flash-message.success {
+    background-color: #dff0d8;
+    color: green;
+    border-color: #d6e9c6;
+  }
+  
+  .flash-message.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border-color: #ebccd1;
+  }
+  
+  .flash-message.warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+    border-color: #faebcc;
+  }

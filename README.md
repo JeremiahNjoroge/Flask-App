@@ -1,6 +1,6 @@
-# Flask-App
+## Flask-App
 
-Welcome to my first Flask project
+# Welcome to my first Flask project
 
 In the repository you will find:
     1. Main file = app.py
@@ -10,3 +10,4 @@ In the repository you will find:
 
 You can clone this repository!!
 Create a virtual environment!!
+Make sure to change file paths!!

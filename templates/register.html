@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+
 </head>
 
 <body>
@@ -13,7 +15,7 @@
     <form method="POST" action="">
         {{ form.hidden_tag() }}
         {{ form.username }}
-        {{ form.password }}
+        {{ form.password }}<br>
         {{ form.submit }}
     </form>
     <p>If registration is complete, you will be redirected to login page else try DIFFERENT username.</p>

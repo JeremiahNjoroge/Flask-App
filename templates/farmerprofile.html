@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Farmer Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+</head>
+
+<body>
+    <h1>Create Farmer Profile</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.first_name.label }} {{ form.first_name }}
+        {{ form.surname.label }} {{ form.surname }}
+        {{ form.mobile.label }} {{ form.mobile }}
+        {{ form.gender.label }} {{ form.gender }}
+        {{ form.dateofbirth.label }} {{ form.dateofbirth }}
+        {{ form.IDNo.label }} {{ form.IDNo }}
+        <br>
+        {{ form.submit }}
+       
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Profile Details</h1>
+    <p>Username: {{ profile.username }}</p>
+    <p>First Name: {{ profile.first_name }}</p>
+    <p>Surname: {{ profile.surname }}</p>
+    <p>Mobile: {{ profile.mobile }}</p>
+    <p>Gender: {{ profile.gender }}</p>
+    <p>Date of Birth: {{ profile.dateofbirth }}</p>
+    <p>ID Number: {{ profile.IDNo }}</p>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>

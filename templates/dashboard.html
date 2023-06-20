@@ -6,11 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 
 <body>
-    <h1>Hello you are logged in.</h1>
-    <a href="{{url_for('logout')}}">Press here to logout</a>
+    <h1>Hello, you are logged in.</h1>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for message in messages %}
+                    <div class="flash-message">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+    <div class="dashboard-buttons">
+        <a href="{{ url_for('viewprofile') }}">View Profile</a>
+        <br>
+        {% if profile %}
+            <a href="{{ link_url }}">{{ link_text }}</a>
+        {% else %}
+            <a href="{{ link_url }}">{{ link_text }}</a>
+        {% endif %}
+        <br>
+        
+        <a href="{{ url_for('logout') }}">Press here to logout</a>
+    </div>
+    <a href="{{ url_for('produce', produce_type='coffee') }}" class="btn btn-primary">Coffee</a>
+    <a href="{{ url_for('produce', produce_type='milk') }}" class="btn btn-primary">Milk</a>
+    <br>
 </body>
 
 </html>
